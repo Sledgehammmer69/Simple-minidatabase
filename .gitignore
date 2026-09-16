@@ -1,0 +1,11 @@
+# Compiled executable
+database
+
+# Object files
+*.o
+
+# C compiled files
+*.out
+
+# Binary database files
+*.bin

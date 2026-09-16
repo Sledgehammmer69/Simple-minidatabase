@@ -191,7 +191,7 @@ int add_candidate()
         return 1;
     }
     size_t written = fwrite(candidates, sizeof(struct Candidate), count, file);
-    if(written != count)
+    if(written != (size_t)count)
     {
         printf("Error writing candidates!\n");
         free(candidates);
@@ -348,7 +348,7 @@ int update_candidate()
         return 1;
     }
     size_t written = fwrite(candidates, sizeof(struct Candidate), count, file);
-    if(written != count)
+    if(written != (size_t)count)
     {
         printf("Error writing candidates!\n");
         free(candidates);
@@ -451,7 +451,7 @@ int delete_candidate()
         return 1;
     }
     size_t written = fwrite(candidates, sizeof(struct Candidate), count, file);
-    if(written != count)
+    if(written != (size_t)count)
     {
         printf("Error writing candidates!\n");
         fclose(file);
