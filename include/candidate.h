@@ -8,6 +8,7 @@ struct Candidate
     int skill;
 };
 
-int read();
+int read(void);
+int search_candidate(void);
 
 #endif
