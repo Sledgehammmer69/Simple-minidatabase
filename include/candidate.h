@@ -12,5 +12,6 @@ int read(void);
 int search_candidate(void);
 int add_candidate(void);
 int update_candidate(void);
+int delete_candidate(void);
 
 #endif
