@@ -52,7 +52,7 @@ int main()
         else if(choice == 6)
         {
             system("clear");
-            printf("THANK YOU!!\n");
+            printf("THANK YOU!!!\n");
             break;
         }
         else
