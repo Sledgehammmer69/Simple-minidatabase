@@ -10,5 +10,6 @@ struct Candidate
 
 int read(void);
 int search_candidate(void);
+int add_candidate(void);
 
 #endif
