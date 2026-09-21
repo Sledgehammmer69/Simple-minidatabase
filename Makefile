@@ -5,13 +5,13 @@ TARGET = database
 OBJ = main.o candidate.o
 
 $(TARGET): $(OBJ)
-	$(CC) $(OBJ) -o $(TARGET)
+	$(CC) $(OBJ) -o $@
 
-main.o: src/main.c
-	$(CC) $(CFLAGS) -c src/main.c -o main.o
+main.o: src/main.c include/candidate.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
-candidate.o: src/candidate.c
-	$(CC) $(CFLAGS) -c src/candidate.c -o candidate.o
+candidate.o: src/candidate.c include/candidate.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY: clean
 
