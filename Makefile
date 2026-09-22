@@ -12,10 +12,12 @@ $(TARGET): $(OBJ)
 	$(CC) $(OBJ) -o $@
 
 build/%.o: src/%.c include/candidate.h | build
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
 
 build:
 	mkdir -p build
 
 clean:
 	rm -rf build
+
+-include $(OBJ:.o=.d)
