@@ -4,6 +4,9 @@ database
 # Object files
 *.o
 
+# Build directory
+build/
+
 # C compiled files
 *.out
 

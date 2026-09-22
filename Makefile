@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude
 
 TARGET = database
-OBJ = main.o candidate.o
+OBJ = build/main.o build/candidate.o
 
 .PHONY: all clean
 
@@ -11,8 +11,11 @@ all: $(TARGET)
 $(TARGET): $(OBJ)
 	$(CC) $(OBJ) -o $@
 
-%.o: src/%.c include/candidate.h
+build/%.o: src/%.c include/candidate.h | build
 	$(CC) $(CFLAGS) -c $< -o $@
 
+build:
+	mkdir -p build
+
 clean:
-	rm -f $(TARGET) $(OBJ)
+	rm -rf build $(TARGET)
