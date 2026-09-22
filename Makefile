@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude
 
-TARGET = database
+TARGET = build/database
 OBJ = build/main.o build/candidate.o
 
 .PHONY: all clean
@@ -18,4 +18,4 @@ build:
 	mkdir -p build
 
 clean:
-	rm -rf build $(TARGET)
+	rm -rf build
