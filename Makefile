@@ -1,5 +1,8 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Iinclude
+CPPFLAGS = -Iinclude
+CFLAGS = -Wall -Wextra
+LDFLAGS =
+LDLIBS =
 
 TARGET = build/database
 OBJ = build/main.o build/candidate.o
@@ -9,10 +12,10 @@ OBJ = build/main.o build/candidate.o
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
-	$(CC) $(OBJ) -o $@
+	$(CC) $(LDFLAGS) $(OBJ) -o $@ $(LDLIBS)
 
 build/%.o: src/%.c include/candidate.h | build
-	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) -MMD -MP -c $< -o $@
 
 build:
 	mkdir -p build
