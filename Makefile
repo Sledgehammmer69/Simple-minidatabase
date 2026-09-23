@@ -5,7 +5,8 @@ LDFLAGS =
 LDLIBS =
 
 TARGET = build/database
-OBJ = build/main.o build/candidate.o
+SRC = src/main.c src/candidate.c
+OBJ = $(SRC:src/%.c=build/%.o)
 
 .PHONY: all clean
 
