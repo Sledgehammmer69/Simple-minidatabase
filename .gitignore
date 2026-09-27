@@ -12,3 +12,15 @@ build/
 
 # Binary database files
 *.bin
+
+# Debugging practice executables
+valgrind_test
+segfault
+
+# Original test files
+write
+write.c
+
+# Debugging practice source files
+valgrind_test.c
+segfault.c
