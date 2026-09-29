@@ -1,5 +1,6 @@
 # Mini Database
-A simple candidate database written in C with file I/O.
+
+A simple candidate database written in C with file I/O, built for learning Git workflows.
 
 ## Features
 
