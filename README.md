@@ -9,6 +9,10 @@ A simple candidate database written in C.
 - Update candidate
 - Delete candidate
 
+## Project Status
+
+Currently under development.
+
 ## Build
 
 ```bash
