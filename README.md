@@ -1,5 +1,5 @@
 # Mini Database
-A simple candidate database written in C.
+A simple candidate database written in C with file I/O.
 
 ## Features
 
