@@ -14,6 +14,10 @@ A simple candidate database written in C with file I/O, built for learning Git w
 
 Currently under development.
 
+## Build System
+
+The project uses Make to manage compilation.
+
 ## Build
 
 ```bash
