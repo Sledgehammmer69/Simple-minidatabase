@@ -18,6 +18,10 @@ Currently under development.
 
 The project uses Make to manage compilation.
 
+## Development
+
+This project is being used to practice Git workflows.
+
 ## Build
 
 ```bash
