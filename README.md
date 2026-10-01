@@ -18,6 +18,8 @@ Currently under development.
 
 The project uses Make to manage compilation.
 
+**Note this is for main branch
+
 ## Build
 
 ```bash
